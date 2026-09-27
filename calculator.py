@@ -28,6 +28,18 @@ def multiplication():
         print("Invalid input. Please enter valid numbers.")
 
 
+def division():
+    try:
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+        result = num1 / num2
+        print(f"Division result: {result:g}")
+    except ValueError:
+        print("Invalid input. Please enter valid numbers.")
+    except ZeroDivisionError:
+        print("Error: Division by zero is not allowed.")
+
+
 def main():
     while True:
         print("\n================================")
@@ -37,8 +49,8 @@ def main():
         print("1. Addition")
         print("2. Subtraction")
         print("3. Multiplication")
-        print("4. Exit")
-        print("================================")
+        print("4. Division")
+        print("5. Exit")
 
         choice = input("Enter your choice: ")
 
@@ -49,10 +61,12 @@ def main():
         elif choice == "3":
             multiplication()
         elif choice == "4":
+            division()
+        elif choice == "5":
             print("Thank you for using Calculator Master!")
             break
         else:
-            print("Invalid choice. Please select a number from 1 to 4.")
+            print("Invalid choice. Please select a number from 1 to 5.")
 
 
 if __name__ == "__main__":
