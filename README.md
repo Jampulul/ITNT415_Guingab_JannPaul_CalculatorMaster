@@ -31,4 +31,4 @@ Calculator Master is a menu-driven Python calculator developed using Git and Git
 
 ## Sample Execution Screenshot
 
-A screenshot of the completed calculator will be included in the project submission.
+![Calculator Sample Execution](sample-execution.png)
