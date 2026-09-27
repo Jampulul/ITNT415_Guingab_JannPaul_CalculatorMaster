@@ -27,6 +27,7 @@ def main():
         print("1. Addition")
         print("2. Subtraction")
         print("3. Exit")
+        print("================================")
 
         choice = input("Enter your choice: ")
 
@@ -38,7 +39,7 @@ def main():
             print("Thank you for using Calculator Master!")
             break
         else:
-            print("Invalid choice. Please select 1, 2, or 3.")
+            print("Invalid choice. Please select a number from 1 to 3.")
 
 
 if __name__ == "__main__":
