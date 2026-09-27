@@ -2,7 +2,8 @@ def addition():
     try:
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
-        print("Result:", num1 + num2)
+        result = num1 + num2
+        print(f"Addition result: {result:g}")
     except ValueError:
         print("Invalid input. Please enter numbers.")
 
@@ -20,7 +21,7 @@ def main():
     if choice == "1":
         addition()
     elif choice == "2":
-        print("Goodbye!")
+        print("Thank you for using Calculator Master!")
     else:
         print("Invalid choice. Please select 1 or 2.")
 
