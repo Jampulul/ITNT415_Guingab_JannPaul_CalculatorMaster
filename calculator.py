@@ -18,6 +18,16 @@ def subtraction():
         print("Invalid input. Please enter valid numbers.")
 
 
+def multiplication():
+    try:
+        num1 = float(input("Enter first number: "))
+        num2 = float(input("Enter second number: "))
+        result = num1 * num2
+        print(f"Multiplication result: {result:g}")
+    except ValueError:
+        print("Invalid input. Please enter valid numbers.")
+
+
 def main():
     while True:
         print("\n================================")
@@ -26,8 +36,8 @@ def main():
         print("================================")
         print("1. Addition")
         print("2. Subtraction")
-        print("3. Exit")
-        print("================================")
+        print("3. Multiplication")
+        print("4. Exit")
 
         choice = input("Enter your choice: ")
 
@@ -36,10 +46,12 @@ def main():
         elif choice == "2":
             subtraction()
         elif choice == "3":
+            multiplication()
+        elif choice == "4":
             print("Thank you for using Calculator Master!")
             break
         else:
-            print("Invalid choice. Please select a number from 1 to 3.")
+            print("Invalid choice. Please select a number from 1 to 4.")
 
 
 if __name__ == "__main__":
