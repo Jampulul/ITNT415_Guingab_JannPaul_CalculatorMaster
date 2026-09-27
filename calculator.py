@@ -32,12 +32,15 @@ def division():
     try:
         num1 = float(input("Enter first number: "))
         num2 = float(input("Enter second number: "))
+
+        if num2 == 0:
+            print("Error: Division by zero is not allowed.")
+            return
+
         result = num1 / num2
         print(f"Division result: {result:g}")
     except ValueError:
         print("Invalid input. Please enter valid numbers.")
-    except ZeroDivisionError:
-        print("Error: Division by zero is not allowed.")
 
 
 def main():
@@ -51,6 +54,7 @@ def main():
         print("3. Multiplication")
         print("4. Division")
         print("5. Exit")
+        print("================================")
 
         choice = input("Enter your choice: ")
 
